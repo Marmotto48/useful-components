@@ -1,0 +1,20 @@
+.navigation-sections-cntainer {
+  scroll-snap-type: y mandatory; /* apply to html */
+}
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  background-color: cornflowerblue;
+}
+.secondary {
+  background-color: rgb(86, 140, 240);
+}
+.third {
+  background-color: rgb(74, 133, 241);
+}

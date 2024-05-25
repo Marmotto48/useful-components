@@ -1,0 +1,18 @@
+.responsive-grid-container {
+  width: 40rem;
+  height: 40rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.item {
+  border: 2px solid cornflowerblue;
+  color: cornflowerblue;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 450px) {
+  .responsive-grid-container {
+    grid-template-columns: auto;
+  }
+}

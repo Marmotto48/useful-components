@@ -1,0 +1,20 @@
+.box {
+  aspect-ratio: 3/2;
+  background-color: cornflowerblue;
+  margin: auto;
+  display: grid;
+  place-items: center;
+}
+
+.text {
+  color: white;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.container {
+  padding: 50px;
+  margin: auto;
+  width: 30%;
+}

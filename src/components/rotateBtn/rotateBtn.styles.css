@@ -1,0 +1,21 @@
+.rotate-btn {
+  background-color: #9bbcd9;
+  width: 12rem;
+  height: 12rem;
+  font-size: 5rem;
+  color: #c4d7ee;
+  border-radius: 40px;
+  border: none;
+  box-shadow: inset 3px 3px 3px #849bb8, inset -3px -3px 3px #7b98bc;
+  transition: all 0.2s ease-in;
+}
+
+.rotate-btn:hover {
+  transform: rotate(-90deg);
+}
+
+.rotate-btn-container {
+  background-color: #9bbcd9;
+  width: 16rem;
+  padding: 3rem;
+}
