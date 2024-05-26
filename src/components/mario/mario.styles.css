@@ -1,0 +1,117 @@
+.mario-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.sky {
+  width: 100%;
+  background-color: lightblue;
+  height: 300px;
+}
+.grass {
+  width: 100%;
+  background-color: seagreen;
+  height: 200px;
+}
+.road,
+.sky,
+.grass {
+  position: relative;
+}
+
+.road {
+  background-color: dimgray;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.lines {
+  position: absolute;
+  width: 100%;
+  border-top: 10px dashed white;
+  top: 45%;
+}
+.cloud-img {
+  position: absolute;
+}
+.cloud-img:nth-child(1) {
+  width: 200px;
+  top: 120px;
+  opacity: 0.5;
+  animation: wind 80s linear infinite reverse both;
+}
+.cloud-img:nth-child(2) {
+  width: 300px;
+  top: 0;
+  animation: wind 50s linear infinite reverse both;
+}
+
+.mario-img {
+  width: 8%;
+  top: -40px;
+  position: absolute;
+  left: 0;
+  animation: drive 3s infinite linear both, jump 0.5s 1.2s ease;
+}
+
+.luigi-img {
+  position: absolute;
+  width: 8%;
+  top: 70px;
+  left: 0;
+  z-index: 10;
+  animation: drive 5s infinite both;
+  animation-timing-function: linear;
+}
+
+.mashroom-img {
+  width: 5%;
+  position: absolute;
+  bottom: 20px;
+  left: 15%;
+  animation: mashroom-jump 1s infinite;
+}
+/* Mario animation  */
+@keyframes drive {
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes wind {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 100vw;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: -40px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: -40px;
+  }
+}
+@keyframes mashroom-jump {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}

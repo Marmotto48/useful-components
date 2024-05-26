@@ -4,6 +4,7 @@ import Button from "./components/button/button";
 import FlipCard from "./components/flipCard/flipCard";
 import GlassEffect from "./components/glassEffect/glassEffect";
 import LoadingCircal from "./components/loadingCircal/loadingCircal";
+import Mario from "./components/mario/mario";
 import MenuIcon from "./components/menuIcon/menuIcon";
 import NavigationSections from "./components/navigationSections/navigationSections";
 import ProgressBar from "./components/progressBar/progressBar";
@@ -23,6 +24,7 @@ function App() {
       <MenuIcon />
       <FlipCard />
       <ResponsiveGrid />
+      <Mario />
     </div>
   );
 }
