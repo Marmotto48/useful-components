@@ -26,3 +26,63 @@
   backface-visibility: hidden;
   background-color: cornflowerblue;
 }
+
+/* list */
+.flip-list-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* h1{
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  font-size: 48px;
+} */
+
+.panels {
+  list-style-type: none;
+  padding: 0;
+}
+
+.panels li {
+  position: relative;
+  width: 25%;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+}
+
+.panels li div {
+  width: 100%;
+  padding: 50% 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 0;
+  cursor: pointer;
+}
+.panels div.list-front {
+  position: absolute;
+}
+.panels div.list-back {
+  transform: rotateY(90deg);
+}
+.panels li:hover div.list-front {
+  animation: twirl 0.2s ease-in forwards;
+}
+.panels li:hover div.list-back {
+  animation: twirl 0.2s 0.2s ease-out forwards reverse;
+}
+@keyframes twirl {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(90deg);
+  }
+}

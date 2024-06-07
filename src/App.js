@@ -7,7 +7,7 @@ import GlassEffect from "./components/glassEffect/glassEffect";
 import LoadingCircal from "./components/loadingCircal/loadingCircal";
 import Mario from "./components/mario/mario";
 import MenuIcon from "./components/menuIcon/menuIcon";
-import NavigationSections from "./components/navigationSections/navigationSections";
+// import NavigationSections from "./components/navigationSections/navigationSections";
 import PopupAnimation from "./components/popupAnimation/popupAnimation";
 import ProgressBar from "./components/progressBar/progressBar";
 import ResponsiveGrid from "./components/responsiveGrid/responsiveGrid";
@@ -22,21 +22,6 @@ function App() {
     setIsDialogOpen(false);
   };
 
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => {
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-
-  const handleClickOutside = (event) => {
-    if (event.target.className === "modal") {
-      closeModal();
-    }
-  };
   return (
     <div className="App">
       <AspectRatio />

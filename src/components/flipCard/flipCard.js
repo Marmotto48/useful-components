@@ -10,30 +10,70 @@ const FlipCard = () => {
         </div>
       </div>
       <div className="flip-list-container">
-        <h1>Pick a card</h1>
-        <ul>
+        <h1>Pick a Card</h1>
+        <ul className="panels">
           <li>
-            <div className="list-front" style={{ backgroundColor: "#267df4" }}>
-              1
+            <div className="list-front" style={{ background: "#267df4" }}>
+              Hello
             </div>
-            <div className="list-back" style={{ backgroundColor: "#4c8fea" }}>
-              1.1
+            <div className="list-back" style={{ background: "#4c8fea" }}>
+              World
             </div>
           </li>
           <li>
-            <div className="list-front" style={{ backgroundColor: "#9126f4" }}>
-              2
+            <div className="list-front" style={{ background: "#9126f4" }}>
+              Get to
             </div>
-            <div className="list-back" style={{ backgroundColor: "#a144f7" }}>
-              2.1
+            <div className="list-back" style={{ background: "#a144f7" }}>
+              The chopper
             </div>
           </li>
           <li>
-            <div className="list-front" style={{ backgroundColor: "#21bf3b" }}>
-              3
+            <div className="list-front" style={{ background: "#21bf3b" }}>
+              foo
             </div>
-            <div className="list-back" style={{ backgroundColor: "#4dd763" }}>
-              3.1
+            <div className="list-back" style={{ background: "#4dd763" }}>
+              bar
+            </div>
+          </li>
+          <li>
+            <div className="list-front" style={{ background: "#c3333d" }}>
+              tempus
+            </div>
+            <div className="list-back" style={{ background: "#e74853" }}>
+              fugit
+            </div>
+          </li>
+          <li>
+            <div className="list-front" style={{ background: "#c3333d" }}>
+              html
+            </div>
+            <div className="list-back" style={{ background: "#e74853" }}>
+              rocks
+            </div>
+          </li>
+          <li>
+            <div className="list-front" style={{ background: "#21bf3b" }}>
+              A
+            </div>
+            <div className="list-back" style={{ background: "#4dd763" }}>
+              B
+            </div>
+          </li>
+          <li>
+            <div className="list-front" style={{ background: "#9126f4" }}>
+              Super
+            </div>
+            <div className="list-back" style={{ background: "#a144f7" }}>
+              Mariokart
+            </div>
+          </li>
+          <li>
+            <div className="list-front" style={{ background: "#267df4" }}>
+              j
+            </div>
+            <div className="list-back" style={{ background: "#4c8fea" }}>
+              Query
             </div>
           </li>
         </ul>

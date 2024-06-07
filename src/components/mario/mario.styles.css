@@ -48,7 +48,7 @@
   animation: wind 50s linear infinite reverse both;
 }
 
-.mario-img {
+.mario-driving-img {
   width: 8%;
   top: -40px;
   position: absolute;
@@ -73,6 +73,70 @@
   left: 15%;
   animation: mashroom-jump 1s infinite;
 }
+
+/*  */
+.bigger-sky {
+  height: 500px;
+  margin-top: 50px;
+}
+
+.hill-img {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+}
+
+.bush-img {
+  width: 5%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.money-box-img {
+  width: 5%;
+  position: absolute;
+  left: 60%;
+  bottom: 35%;
+}
+
+.mario-img {
+  width: 100px;
+  bottom: 0;
+  position: absolute;
+  left: 40%;
+}
+
+.mario-jump-img {
+  width: 100px;
+  bottom: 0;
+  position: absolute;
+  left: 59%;
+  animation: jump 1s infinite;
+}
+
+.money-img {
+  position: absolute;
+  width: 50px;
+  left: 62.5%;
+  bottom: 48%;
+  animation: coin-animation 1s infinite;
+  transform: translateX(-50%);
+  /* display: none; */
+}
+/* @keyframes jump {
+  
+} */
+@keyframes coin-animation {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50px);
+    opacity: 0;
+  }
+}
+
 /* Mario animation  */
 @keyframes drive {
   from {
@@ -95,13 +159,27 @@
 
 @keyframes jump {
   0% {
-    top: -40px;
+    bottom: 0px;
   }
   50% {
-    top: -100px;
+    bottom: 18%;
   }
   100% {
-    top: -40px;
+    bottom: 0px;
+  }
+}
+@keyframes money-jump {
+  0% {
+    bottom: 48%;
+    display: none;
+  }
+  50% {
+    bottom: 55%;
+    display: block;
+  }
+  100% {
+    bottom: 48%;
+    display: none;
   }
 }
 @keyframes mashroom-jump {

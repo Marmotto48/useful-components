@@ -3,7 +3,7 @@ import "./popupAnimation.styles.css";
 const PopupAnimation = ({ isOpen, onClose, children }) => {
   return (
     <div className="modal-parent">
-      <dialog open={isOpen} className="modal">
+      <dialog open={isOpen} className="modal" onClick={onClose}>
         <div className="modal-content">
           <span className="close" onClick={onClose}>
             &times;
